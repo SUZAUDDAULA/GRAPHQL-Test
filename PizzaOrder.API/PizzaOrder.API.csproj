@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="GraphQL.Server.Transports.AspNetCore" Version="7.1.1" />
+    <PackageReference Include="GraphQL.Server.Transports.WebSockets" Version="4.4.1" />
+    <PackageReference Include="GraphQL.Server.Ui.Playground" Version="7.1.1" />
+    <PackageReference Include="GraphQL.Server.Ui.Voyager" Version="7.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PizzaOrder.Business\PizzaOrder.Business.csproj" />
+    <ProjectReference Include="..\PizzaOrder.Data\PizzaOrder.Data.csproj" />
+    <ProjectReference Include="..\PizzaOrder.GraphQLModels\PizzaOrder.GraphQLModels.csproj" />
+  </ItemGroup>
+
+
+</Project>
